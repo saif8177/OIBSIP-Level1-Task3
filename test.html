@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <body>
+        <div class="rectangle" >
+        <p class="box">
+            <label >Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder=""
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)"
+            >
+            
+          </p>
+          <p class="box">
+            <label >Celsius</label>
+            <input id="inputFahrenheit" type="number" placeholder=""
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)">
+          </p>
+          <p class="box">
+            <label >Kelvin</label>
+            <input id="inputFahrenheit" type="number" placeholder=""
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)">
+          </p>
+          <p class="box2">Celsius: <span id="outputCelsius"></span></p>
+          <p class="box2">Fahrenheit: <span id="outputKel"></span></p>
+          <p class="box2">Kelvin: <span id="outputKelvin"></span></p>
+          
+        </div>
+        <script src="convert.js"></script>
+    </body>
+</html>
